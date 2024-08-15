@@ -1,0 +1,21 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-content: center;
+    background-color: black;
+
+}
+.container{
+    max-width: 80%;
+    background-color: rgb(53, 27, 53);
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px white;
+    border-radius: 20px;
+}
+h1, h2, p{
+    color: white;
+}
+a{
+    color: rgb(1, 148, 99);
+}
