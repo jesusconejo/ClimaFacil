@@ -1,5 +1,5 @@
 const urlBase =`https://api.openweathermap.org/data/2.5/weather`;
-let API_KEY = '1d08302074e2ee92d5a2cfed99d76213';
+let API_KEY = process.env.API_KEY;;
 const diffKelvin = 273.15;
 
 document.getElementById('button').addEventListener('click', () =>{
@@ -32,7 +32,7 @@ function showWeatherData(data){
     cityInfo.textContent = `${cityName}, ${conutryN} `;
     
     const tempInfo = document.createElement('p');
-    tempInfo.textContent = `La temperatura esta en  ${temp} `;
+    tempInfo.textContent = `La temperatura esta en  ${temp} °C `;
 
     const descriptionInfo = document.createElement('p');
     descriptionInfo.textContent = `Estado metereologico es  ${description} `;
